@@ -8,5 +8,7 @@ data['BMI'] = data['weight_kg']/(data['height_m']**2)
 data_out = data[['short_name','overall','height_m','weight_kg','BMI']]
 print(data_out)
 
-plt.scatter(data['BMI'],data['overall'])
+plt.plot(data['BMI'],data['overall'])
+plt.xlabel("Player's BMI")
+plt.ylabel("Player's overall performance")
 plt.show()
